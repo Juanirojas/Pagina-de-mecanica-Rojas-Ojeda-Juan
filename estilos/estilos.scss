@@ -1,0 +1,122 @@
+
+
+$color-fondo:white;
+$secondary-color:black;
+$font-color:#aaa;
+
+
+
+
+*{
+    padding: 0;
+    margin: 0;box-sizing: border-box;
+}
+
+$limit:10;
+$unit:8px;
+
+@function size($value){
+  @return $value * $unit;
+}
+
+           
+
+
+body{
+    background-color: $color-fondo;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+.card-text{
+    font-weight:lighter ;
+    font-size: size(2);
+}
+
+h5{
+    font-weight: bolder;
+    font-size: size(6);
+}
+
+
+
+
+#ribbon {
+    background-color: #db1a1a;
+    background-image: repeating-linear-gradient(45deg, transparent, transparent 25px, rgba(131, 21, 21, 0.5) 25px, rgba(131, 21, 21, 0.5) 40px);
+  }
+  
+  #ribbon::after {
+    background-color: transparent;
+    display: block;
+    height: 20px;
+    width: 50%;
+    margin: 0 auto;
+    position: relative;
+    left: auto;
+    margin-top: -40px;
+  }
+  
+  #acarreo {
+    background-color: #db1a1a;
+    position: relative;
+    margin-top: -20px;
+    z-index: 10;
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  #acarreo img {
+    position: relative;
+  }
+  
+  #separator-ribbon {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+  }
+  
+  #separator-ribbon .content {
+    width: 150%;
+    height: 150px;
+    margin-left: -25%;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+  }
+
+  .card-border {
+    border: solid 10px white;
+    border-radius: 20px;
+    overflow: hidden;
+    -webkit-transition: all ease-out 0.2;
+    transition: all ease-out 0.2;
+  }
+  
+  .card-border:hover {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+  
+  #footer {
+    background-color: grey;
+  }
+  
+  .socialbar__enlace {
+    color: white;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 20px;
+    font-size: 30px;
+  }
+  
+  #galeria img{
+    width: 100%;
+    p{
+      text-align: center;
+    }
+  
+  }
+  
+ 
